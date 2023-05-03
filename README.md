@@ -72,7 +72,15 @@ To mitigate these potential exploits, the reputation module should have robust m
 
 - Verification process: The module can also include a verification process to ensure that reported outcomes are accurate. This can involve using external data sources to validate the outcome of an event or using a consensus mechanism to confirm the outcome.
 
+### Reputation decay 
 
+The reputation decay mechanism is a way to ensure that the reputation score of a user reflects their recent activity and accuracy in reporting. Without a decay mechanism, a user who has a high reputation score but hasn't reported on an event in a long time may not necessarily be a reliable source of information anymore. The decay mechanism helps to ensure that the reputation score is constantly updated and reflects the current reliability of the user.
+
+The decay mechanism works by gradually reducing a user's reputation score over time if they don't report on events regularly. The rate of decay can be adjusted based on various factors such as the amount of time elapsed since the user's last report or the number of reports made by the user in the past. By implementing a decay mechanism, users are incentivized to continue reporting on events in order to maintain their reputation score.
+
+For example, suppose a user has a reputation score of 100 and hasn't reported on an event in the last 30 days. If the decay rate is set to 10% per month, their reputation score would be reduced by 10 points to 90 after the first 30 days. If they still haven't reported on any events after another 30 days, their reputation score would be reduced by another 10% to 81. This process continues until the user reports on an event and their reputation score is updated accordingly.
+
+Overall, the reputation decay mechanism helps to ensure that the reputation scores are accurate and up-to-date, providing a reliable measure of a user's reliability and accuracy in reporting.
 
 ### Possible message structure for the module:
 ```
