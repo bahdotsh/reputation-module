@@ -82,6 +82,12 @@ For example, suppose a user has a reputation score of 100 and hasn't reported on
 
 Overall, the reputation decay mechanism helps to ensure that the reputation scores are accurate and up-to-date, providing a reliable measure of a user's reliability and accuracy in reporting.
 
+### Reputation token as an extension of native token
+
+The reputation token can act as an extension of the native token by serving as an additional measure of value within the Sei network. Users can earn reputation tokens through accurate reporting in the prediction markets, and these tokens can be used as a measure of a user's reliability and accuracy in future events. This can create a virtuous cycle where users are incentivized to act honestly and accurately, thereby improving the overall quality of the prediction markets and the reputation system.
+
+To facilitate the use of reputation tokens, Sei could allow for the seamless exchange of reputation tokens with the native token or other tokens within the network. This would enable users to easily convert their reputation tokens into other forms of value, while still maintaining the integrity of the reputation system. Additionally, Sei could offer staking mechanisms for reputation tokens, where users can earn rewards for staking their tokens and contributing to the stability and security of the network.
+
 ### Possible message structure for the module:
 ```
 type MsgReport struct {
